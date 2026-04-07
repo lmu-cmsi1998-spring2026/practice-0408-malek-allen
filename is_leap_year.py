@@ -17,6 +17,8 @@ def is_leap_year(year: int) -> bool:
 
 if __name__ == "__main__":
     print(is_leap_year(2000))  # True
+    print(is_leap_year(2001))  # False
+    print(is_leap_year(2002))  # False
     print(is_leap_year(1900))  # False
     print(is_leap_year(2004))  # True
     print(is_leap_year(2001))  # False
