@@ -1,15 +1,13 @@
 from sys import argv
 from is_valid_date import is_valid_date
 
-
+#day counter method
 def day_counter(year1: int, month1: int, day1: int, year2: int, month2: int, day2: int) -> int:
-    #initialize variables
     current_year = year1
     current_month = month1
     current_day = day1
     current_day_count = 0
 
-    #main while loop
     while (current_year, current_month, current_day) != (year2, month2, day2):
         current_day_count += 1
         current_day += 1
@@ -23,7 +21,6 @@ def day_counter(year1: int, month1: int, day1: int, year2: int, month2: int, day
                 current_year += 1
 
     return current_day_count
-    #this is a completely useless comment :]
 
 if __name__ == "__main__":
     if len(argv) != 7:
@@ -35,4 +32,3 @@ if __name__ == "__main__":
             print(f'The number of days is: {day_counter(year2, month2, day2, year1, month1, day1)}')
         else:
             print(f'The number of days is: {day_counter(year1, month1, day1, year2, month2, day2)}')
-
