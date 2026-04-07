@@ -3,6 +3,7 @@ def is_leap_year(year: int) -> bool:
     Any given year is a leap year if:
         - It's divisible by 4, but not 100 (unless it's divisible by 400)
     """
+    #bad code golf
     if year % 4 == 0:
         if year % 100 == 0:
             if year % 400 == 0:
@@ -14,7 +15,7 @@ def is_leap_year(year: int) -> bool:
     else:
         return False
 
-
+#good tests
 if __name__ == "__main__":
     print(is_leap_year(2000))  # True
     print(is_leap_year(1900))  # False
